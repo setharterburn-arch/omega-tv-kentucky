@@ -127,9 +127,10 @@ export async function POST(req: NextRequest) {
 
     // Send success notification
     const phoneDisplay = customerPhone ? `\nPhone: ${customerPhone}` : '';
+    const expiresDisplay = expiresAt ? expiresAt.toLocaleDateString() : 'N/A';
     await sendPushover(
       '🆕 Omega TV: Account Created',
-      `${customerName}${phoneDisplay}\nUsername: ${createResult.username}\nExpires: ${expiresAt.toLocaleDateString()}`,
+      `${customerName}${phoneDisplay}\nUsername: ${createResult.username}\nExpires: ${expiresDisplay}`,
       -1
     );
 
@@ -137,7 +138,7 @@ export async function POST(req: NextRequest) {
       success: true,
       username: createResult.username,
       password: createResult.password,
-      expiresAt: expiresAt.toISOString(),
+      expiresAt: expiresAt ? expiresAt.toISOString() : null,
     });
 
   } catch (error: any) {
