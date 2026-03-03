@@ -6,56 +6,42 @@ export const siteConfig = {
   domain: 'getomegatvky.com', // Update when domain is purchased
   supportEmail: 'support@getomegatvky.com',
   
-  // Troubleshooting YouTube videos
+  // Troubleshooting YouTube videos from @omegatv4u
   troubleshootingVideos: [
     {
-      id: 'setup-firestick',
-      title: 'How to Setup on Firestick',
-      description: 'Step-by-step guide to install and configure on Amazon Firestick',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID', // Replace with actual YouTube video ID
+      id: 'install-overview',
+      title: 'Omega TV Install and Overview',
+      description: 'Complete guide to installing and using Omega TV',
+      youtubeId: 'Z6_H38d9Nmo',
       category: 'setup',
     },
     {
-      id: 'setup-android',
-      title: 'How to Setup on Android',
-      description: 'Install and configure on Android phones, tablets, and TV boxes',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID',
+      id: 'app-walkthrough',
+      title: 'Walk Through New App',
+      description: 'Tour of the new Omega TV app features',
+      youtubeId: 'bMREjgfMAE4',
       category: 'setup',
     },
     {
-      id: 'setup-iphone',
-      title: 'How to Setup on iPhone/iPad',
-      description: 'Install and configure on iOS devices',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID',
-      category: 'setup',
-    },
-    {
-      id: 'buffering-fix',
-      title: 'How to Fix Buffering Issues',
-      description: 'Troubleshoot and resolve buffering problems',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID',
+      id: 'troubleshooting-guide',
+      title: 'Updated Troubleshooting Guide',
+      description: 'Latest troubleshooting tips and fixes',
+      youtubeId: 'tdxXdV1LsbA',
       category: 'troubleshooting',
     },
     {
-      id: 'vpn-setup',
-      title: 'VPN Setup Guide',
-      description: 'How to use a VPN for better streaming',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID',
+      id: 'clear-cache',
+      title: 'Onn Box Clear Cache',
+      description: 'How to clear cache on Onn streaming devices',
+      youtubeId: '-wQRQ_KV56o',
       category: 'troubleshooting',
     },
     {
-      id: 'account-link',
-      title: 'How to Link Your Account',
-      description: 'Connect your IPTV credentials to your web account',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID',
-      category: 'account',
-    },
-    {
-      id: 'renew-subscription',
-      title: 'How to Renew Your Subscription',
-      description: 'Easy steps to renew your service',
-      youtubeId: 'REPLACE_WITH_VIDEO_ID',
-      category: 'account',
+      id: 'uninstall-reinstall',
+      title: 'Uninstall and Reinstall App',
+      description: 'How to uninstall and reinstall Omega TV on Onn devices',
+      youtubeId: 'aUvI3Pozd5o',
+      category: 'troubleshooting',
     },
   ],
 }
