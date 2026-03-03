@@ -70,7 +70,7 @@ export async function GET(request: NextRequest) {
       
       // Sync back to database if different
       const dbExpiry = subscription.expires_at ? new Date(subscription.expires_at).getTime() : 0
-      if (Math.abs(expiryDate.getTime() - dbExpiry) > 86400000) { // >1 day difference
+      if (expiryDate && Math.abs(expiryDate.getTime() - dbExpiry) > 86400000) { // >1 day difference
         await adminSupabase
           .from('user_subscriptions')
           .update({ expires_at: expiryDate.toISOString() })

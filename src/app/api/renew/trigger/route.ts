@@ -85,7 +85,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       message: 'Subscription renewed successfully',
-      expiresAt: newExpiry.toISOString(),
+      expiresAt: newExpiry ? newExpiry.toISOString() : null,
     });
 
   } catch (error: any) {
