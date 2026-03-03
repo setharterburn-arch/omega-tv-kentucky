@@ -26,10 +26,8 @@ interface Plan {
 }
 
 const PLANS: Plan[] = [
-  { id: '1mo', name: '1 Month', months: 1, price_cents: 2000, connections: 3 },
-  { id: '6mo', name: '6 Months', months: 6, price_cents: 9000, connections: 3, savings: 'Save $30' },
-  { id: '12mo', name: '12 Months', months: 12, price_cents: 15000, connections: 3, savings: 'Save $90' },
-  { id: 'lifetime', name: 'Lifetime Access', months: 0, price_cents: 39900, connections: 5, savings: 'Best Value' },
+  { id: '1line', name: '1 Line - 1 Year', months: 12, price_cents: 14900, connections: 1 },
+  { id: '5line', name: '5 Lines - 1 Year', months: 12, price_cents: 19900, connections: 5, savings: 'Best Value' },
 ];
 
 export default function RenewPage() {
@@ -37,7 +35,7 @@ export default function RenewPage() {
   const [isNewCustomer, setIsNewCustomer] = useState(false);
   const [loading, setLoading] = useState(true);
   const [processing, setProcessing] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<Plan>(PLANS[1]); // Default to 6 months
+  const [selectedPlan, setSelectedPlan] = useState<Plan>(PLANS[0]); // Default to 1 Line
   const [cardNumber, setCardNumber] = useState('');
   const [expiry, setExpiry] = useState('');
   const [cvv, setCvv] = useState('');

@@ -98,53 +98,41 @@ export default function LandingPage() {
             SIMPLE PRICING
           </h2>
           <p className="text-gray-500 text-center mb-12">
-            All plans include 3 simultaneous connections. No hidden fees.
+            Annual plans with full access. No hidden fees.
           </p>
           
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* 1 Month */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            {/* 1 Line */}
             <div className="card text-center">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">1 Month</h3>
-              <p className="text-5xl font-bold mb-6">$20</p>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">1 Line</h3>
+              <p className="text-5xl font-bold mb-2">$149</p>
+              <p className="text-gray-400 text-sm mb-4">per year</p>
               <ul className="text-gray-500 text-sm space-y-2 mb-8">
-                <li>3 connections</li>
+                <li>1 device connection</li>
                 <li>All channels</li>
                 <li>HD & 4K quality</li>
+                <li>12 months access</li>
               </ul>
               <Link href="/signup" className="btn-secondary w-full block text-center">
                 Select
               </Link>
             </div>
 
-            {/* 6 Months - Featured */}
+            {/* 5 Lines - Featured */}
             <div className="card card-highlight text-center relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-1">
                 Best Value
               </span>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">6 Months</h3>
-              <p className="text-5xl font-bold mb-2">$90</p>
-              <p className="text-green-600 text-sm font-semibold mb-4">Save $30</p>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">5 Lines</h3>
+              <p className="text-5xl font-bold mb-2">$199</p>
+              <p className="text-gray-400 text-sm mb-4">per year</p>
               <ul className="text-gray-500 text-sm space-y-2 mb-8">
-                <li>3 connections</li>
+                <li>5 device connections</li>
                 <li>All channels</li>
                 <li>HD & 4K quality</li>
+                <li>12 months access</li>
               </ul>
               <Link href="/signup" className="btn-primary w-full block text-center">
-                Select
-              </Link>
-            </div>
-
-            {/* 12 Months */}
-            <div className="card text-center">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">12 Months</h3>
-              <p className="text-5xl font-bold mb-2">$150</p>
-              <p className="text-green-600 text-sm font-semibold mb-4">Save $90</p>
-              <ul className="text-gray-500 text-sm space-y-2 mb-8">
-                <li>3 connections</li>
-                <li>All channels</li>
-                <li>HD & 4K quality</li>
-              </ul>
-              <Link href="/signup" className="btn-secondary w-full block text-center">
                 Select
               </Link>
             </div>
